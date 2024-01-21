@@ -1,0 +1,139 @@
+
+ /* ===========Цвета============== */
+:root{
+    --bg-color:#f5f5f5;
+    --text-color:#6c757d;
+    --accent-color:#ffd333;
+    --constant-color:#3d464d;
+    --gray-color:#ccc;
+
+}
+ /* ===========Цвета============== */
+html,body{
+    height: 100%;
+}
+
+body{
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.btn-warning{
+   background-color: var(--accent-color);
+}
+.btn-warning{
+   background-color: var(--accent-color);
+   color: var(--constant-color);
+}
+.btn-outline-warning{
+   border-color: var(--accent-color);
+
+}
+.btn-outline-warning:hover{
+   background-color: var(--accent-color);
+   color: var(--constant-color);
+}
+
+.btn,
+.dropdown-menu,
+.form-control{
+    border-radius: 0;
+
+}
+/* для формы  */
+.form-control:focus{
+   color: var(--text-color);
+   border-color: var(--accent-color);
+   box-shadow: none;
+}
+.form-control::placeholder{
+   color: var(--gray-color);
+}
+a{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ .wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .header-top-phone a{
+    text-decoration: none;
+
+ }
+ .header-top-phone a:hover{
+    text-decoration: underline;
+
+ }
+
+ .main{
+    flex: 1 1 auto;
+ }
+ 
+
+ ul.social-icons{
+    list-style: none;
+ }
+ ul.social-icons a{
+    background-color: var(--accent-color);
+    color: var(--constant-color);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    transition: all .3s;
+ }
+
+
+ ul.social-icons li{
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+
+ ul.social-icons a:hover{
+    background-color: var(--constant-color);
+    color: var(--accent-color);
+ }
+
+ .header-top.btn{
+    background-color: #fff;
+ }
+
+
+
+  /* ============middle============= */
+
+.header-logo{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: var(--accent-color);
+   transition: all .3s;
+}
+.header-logo:hover{
+   color: var(--constant-color);
+}
+.cart-button .btn{
+   color: var(--constant-color);
+   transition: all .3s;
+}
+
+.cart-button .btn:hover{
+   border: 1px solid var(--constant-color);
+}
+ /* ============search============= */
