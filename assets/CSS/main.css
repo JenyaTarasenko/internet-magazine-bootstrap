@@ -13,6 +13,32 @@ html,body{
     height: 100%;
 }
 
+/* ===========section============== */
+section{
+   padding: 50px 30px;
+}
+.section-title::after{
+   position: absolute;
+   content: '';
+   width: 100%;
+   top: 50%;
+   left: 0;
+   border-top: 1px dashed var(--gray-color);
+   z-index: -1;
+}
+.section-title span{
+   background-color: var(--bg-color);
+   padding-right: 1rem;
+
+}
+
+.section-title{
+   position: relative;
+   text-transform: uppercase;
+   color: var(--accent-color);
+   font-weight: 700;
+}
+
 body{
     min-width: 320px;
     font-family: 'Roboto', sans-serif;
@@ -136,4 +162,85 @@ img{
 .cart-button .btn:hover{
    border: 1px solid var(--constant-color);
 }
- /* ============search============= */
+/* ============search============= */
+
+ /* ============menu============= */
+ .navbar-nav .dropdown-menu{
+   right: 0;
+   left: auto;
+ }
+
+ .top-menu li a::after{
+   content: '';
+   display: block;
+   width: 100%;
+   background-color: #ffd333;
+   height: 1px;
+   transition: all .3s;
+   transform: scale(0);
+ }
+ .header-bottom   {
+   border-top: 3px solid var(--accent-color);
+ }
+ .top-menu li a:hover::after{
+   transform: scale(1);
+ }
+ .header-bottom .navbar{
+   background-color: var(--constant-color) !important;
+ }
+
+ .header-bottom .navbar .nav-link{
+   color: #ffff;
+ }
+ .header-bottom .navbar .nav-link:hover{
+   color: var(--accent-color);
+ }
+
+ .header-bottom .navbar .nav-link.active{
+   color: var(--accent-colorx);
+ }
+ .header-logo h1{
+   margin-right: 20px;
+ }
+
+ 
+/* ============menu============= */
+
+/* ============section main============= */
+
+/* ============carusel============= */
+.carousel-caption{
+   text-shadow: 0 0 2px rgb(0, 0, 0, .9);
+}
+.carousel-caption p{
+   font-size: 1.5rem;
+
+}
+
+/* ============carusel============= */
+
+
+/* ============section main============= */
+/* ===========advantages============== */
+
+.advantages .items{
+   margin-top: 30px;
+}
+.advantages .items .item{
+   background-color: #ffff;
+   text-align: center;
+   padding: 1rem;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   transition: all .3s;
+}
+.advantages .items .item:hover{
+   box-shadow: 0 15px 30px -20px rgb(0, 0, 0, .3);
+}
+.advantages i{
+   font-size: 70px;
+   color: var(--constant-color);
+}
+/* ===========advantages============== */
